@@ -1,0 +1,135 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --darl-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --Very-light-gray: hsl(0, 0%, 95%); /*  background, headings, buttons */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--Very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
+}
+.card__title {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+#flex__container {
+  padding: 20px;
+}
+.flex__card {
+  padding: 30px;
+}
+
+p {
+  color: var(--Transparent-white);
+  font-size: 15px;
+  line-height: 1.8;
+}
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card__style1 {
+  color: #fff;
+  background: var(--bright-orange);
+  border-radius: 10px 10px 0 0;
+}
+.card__style2 {
+  color: #fff;
+  background: var(--darl-cyan);
+}
+.card__style3 {
+  color: #fff;
+  background: var(--very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+article img {
+  padding: 20px;
+}
+button {
+  border: 1px solid white;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.card__style1 .button {
+  color: var(--bright-orange);
+}
+.card__style2 .button {
+  color: var(--darl-cyan);
+}
+.card__style3 .button {
+  color: var(--very-dark-cyan);
+}
+
+.card__style1 .button:hover {
+  color: #fff;
+}
+.card__style2 .button:hover {
+  color: #fff;
+}
+.card__style3 .button:hover {
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  #flex__container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+  }
+  .flex__card {
+    padding: 30px;
+  }
+  .flex__card p {
+    margin-bottom: 50px;
+  }
+  .card__style1 {
+    border-radius: 10px 0 0 10px;
+  }
+  .card__style3 {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+/* @media (min-width:1200px){
+    #flex__container{
+        max-width: 1200px;
+    }   
+} */
